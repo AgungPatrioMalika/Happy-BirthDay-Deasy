@@ -14,10 +14,9 @@ window.addEventListener('load', () => {
         document.querySelector('.song').play();
         resolveFetch().then(animationTimeline());
       } else {
-        alert("Ihhhh Teken Yes sayangggkuu bukan No Aih :(");
+        alert("Ihhhh Teken Yes sayangggkuu bukan No Aih :( ");
         document.querySelector('.song').pause();
-        window.location = index.html;
-          break;
+//         window.location = index.html;          
       }
     });
   });
