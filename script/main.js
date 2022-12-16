@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
       title: 'Aku Ada Sesuatu Buat Kamu Lohhh',
       // text: "You won't be able to revert this!",
       icon: 'info',
-      showCancelButton: false,
+      showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Yes',
