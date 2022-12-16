@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
         resolveFetch().then(animationTimeline());
       } else {
         alert("Ihhhh Teken Yes sayangggkuu bukan No Aih :(");
-        window.location = 'index.html';
+        window.location = index.html;
       }
     });
   });
