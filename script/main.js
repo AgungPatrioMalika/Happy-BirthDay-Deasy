@@ -15,6 +15,7 @@ window.addEventListener('load', () => {
         resolveFetch().then(animationTimeline());
       } else {
         alert("Ihhhh Teken Yes sayangggkuu bukan No Aih :(");
+        document.querySelector('.song').pause();
         window.location = index.html;
           break;
       }
