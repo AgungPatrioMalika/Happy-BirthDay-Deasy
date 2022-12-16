@@ -8,15 +8,15 @@ window.addEventListener('load', () => {
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Yes',
-      cancelButtonText: 'No',
+//       cancelButtonText: 'No',
     }).then((result) => {
       if (result.isConfirmed) {
         document.querySelector('.song').play();
         resolveFetch().then(animationTimeline());
       } else {
-        alert("Ihhhh Teken Yes sayangggkuu bukan No Aih :( Refresh Halaman Nya ya cantikk :)");
+//         alert("Ihhhh Teken Yes sayangggkuu bukan No Aih :( Refresh Halaman Nya ya cantikk :)");
 //         document.querySelector('.song').pause();
-//         window.location = 'index.html';          
+        window.location = 'index.html';          
       }
     });
   });
