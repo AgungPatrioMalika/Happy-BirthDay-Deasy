@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
         document.querySelector('.song').play();
         resolveFetch().then(animationTimeline());
       } else {
-        alert("Ihhhh Teken Yes sayangggkuu bukan No Aih :( ");
+        alert("Ihhhh Teken Yes sayangggkuu bukan No Aih :( Refresh Halaman Nya ya cantikk :)");
         document.querySelector('.song').pause();
         window.location = 'index.html';          
       }
