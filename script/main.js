@@ -1,20 +1,34 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-      title: 'Aku Ada Sesuatu Buat Kamu Lohhh',
-      // text: "You won't be able to revert this!",
-      icon: 'info',
-      showCancelButton: false,
+      title: 'Mass Punya Sesuatu Nih Buat Ade Nya Mass Tersayang🥰',
+      // text: "You won't be able to revert this!",      
+	  icon:'info',
+	  showClass: {
+		popup: `
+		  animate__animated
+		  animate__fadeInUp
+		  animate__faster
+		`
+	  },
+	  hideClass: {
+		popup: `
+		  animate__animated
+		  animate__fadeOutDown
+		  animate__faster
+		`
+	  },
+      showCancelButton: true,
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: 'Yes',
-      cancelButtonText: 'No',
+      cancelButtonText: 'No',	  
     }).then((result) => {
       if (result.isConfirmed) {
         document.querySelector('.song').play();
         resolveFetch().then(animationTimeline());
       } else {
-        alert("Ihhhh Teken Yes sayangggkuu bukan No Aih :(");
+        alert("Ihhhh Teken Yes Sayangggkuu Bukan No Aih 😟 Ayoo Teken Yess Sayangkuuu");
         window.location = 'index.html';
       }
     });
@@ -135,8 +149,8 @@ window.addEventListener('load', () => {
           rotationX: 15,
           rotationZ: -10,
           skewY: "-5deg",
-          y: 50,
-          z: 10,
+          y: 30,
+          //z: 10,
           opacity: 0,
         },
         "+=1.5"
@@ -269,7 +283,7 @@ window.addEventListener('load', () => {
     // Restart Animation on click
     const replyBtn = document.getElementById("replay");
     replyBtn.addEventListener("click", () => {
-      tl.restart();
+      window.location = 'index.html';
     });
   }
 
